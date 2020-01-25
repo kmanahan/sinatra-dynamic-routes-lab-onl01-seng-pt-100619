@@ -30,10 +30,11 @@ class App < Sinatra::Base
   end 
     
     get '/:operation/:number1/:number2' do 
+
       @number1 = params[:number1].to_i 
       @numbers = params[:number2].to_i 
-      "#{@number1  @number2}"
-  
+      str = "#{@number1  @number2}"
+      str.to_s
     end 
     
 end
