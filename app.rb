@@ -36,7 +36,7 @@ class App < Sinatra::Base
       if :operation = 'add'
       str = "#{@number1 + @number2}" 
       return str.to_s
-      elsif 'subtract'
+      elsif :operation = 'subtract'
       str = "#{@number2 - @number1}"
       return str.to_s
       end
