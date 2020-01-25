@@ -39,6 +39,7 @@ class App < Sinatra::Base
       elsif 'subtract'
       str = "#{@number1 - @number2}"
       str.to_s
+      end
     end 
     
 end
