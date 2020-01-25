@@ -16,6 +16,6 @@ class App < Sinatra::Base
     @num = params[:number].to_i
     @phrs = params[:pharse] 
     # 10.times { |i| puts "hello #{i}" }
-    @num.time{"#{@phrase}"}
+    @num.times{"#{@phrase}"}
     end 
 end
